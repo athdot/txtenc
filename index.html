@@ -1,0 +1,632 @@
+<body style="margin : 0;">
+<textarea style="width: 100%; height: 50%;" id="txtat">
+</textarea>
+<form style="position:absolute; left: 50%; transform:translateX(-50%);">
+<p>Encrypt or decrypt:
+  <select id="mySelect">
+    <option value="0">Choose One</option>
+    <option value="1">Encrypt</option>
+    <option value="2">Decrypt</option>
+  </select>
+</form>
+
+<button style="position:absolute; top: 50%; left: 50%; transform:translate(-50%,300%)" onclick="startProcess()">Go</button>
+<p id="demo"></p>
+<script>
+function startProcess() {
+var textArea = document.getElementById("txtat");
+var arrayOfLines = textArea.value.split("\n");
+var lines = arrayOfLines.length;
+var fullthing = arrayOfLines[0] + "/n" 
+var linrun = 1;
+while(linrun < lines){
+var fullthing = fullthing + arrayOfLines[linrun] + "/n"
+linrun++
+} 
+var e = document.getElementById("mySelect");
+var strUser = e.options[e.selectedIndex].value;
+var stin = parseInt(strUser);
+if(stin == 1){
+var kalle = true;
+}else if(stin == 2){
+var kalle = false;
+}
+var lel = " ";
+var ch = fullthing;
+if(kalle === true){
+var runthroughs = 0
+var run = 0
+var wordlength = 1
+var wordlength = ch.length
+while(runthroughs < wordlength){
+var part = ch.substring(runthroughs,runthroughs + 1)
+if(part === "a"){ 
+var letterz = ("sT"); 
+}
+if(part === "b"){
+var letterz = ("p2")
+}
+if(part === "c"){
+var letterz = ("9v")
+}
+if(part === "d"){
+var letterz = ("ab")
+}
+if(part === "e"){
+var letterz = ("mN")
+}
+if(part === "f"){
+var letterz = ("Mn")
+}
+if(part === "g"){
+var letterz = ("nM")
+}
+if(part === "h"){
+var letterz = ("Nm")
+}
+if(part === "i"){
+var letterz = ("QQ")
+}
+if(part === "j"){
+var letterz = ("ba")
+}
+if(part === "k"){
+var letterz = ("bB")
+}
+if(part === "l"){
+var letterz = ("Be")
+}
+if(part === "m"){
+var letterz = ("ZZ")
+}
+if(part === "n"){
+var letterz = ("zz")
+}
+if(part === "o"){
+var letterz = ("PP")
+}
+if(part === "p"){
+var letterz = ("mL")
+}
+if(part === "q"){
+var letterz = ("FF")
+}
+if(part === "r"){
+var letterz = ("cc")
+}
+if(part === "s"){
+var letterz = ("Qu")
+}
+if(part === "t"){
+var letterz = ("SP")
+}
+if(part === "u"){
+var letterz = ("AY")
+}
+if(part === "v"){
+var letterz = ("SL")
+}
+if(part === "w"){
+var letterz = ("PL")
+}
+if(part === "x"){
+var letterz = ("LS")
+}
+if(part === "y"){
+var letterz = ("UU")
+}
+if(part === "z"){
+var letterz = ("PU")
+}
+if(part === " "){
+var letterz = ("qQ")
+}
+if(part === "A"){ 
+var letterz = ("CQ")
+}
+if(part === "B"){
+var letterz = ("CW")
+}
+if(part === "C"){
+var letterz = ("CE")
+}
+if(part === "D"){
+var letterz = ("CR")
+}
+if(part === "E"){
+var letterz = ("CT")
+}
+if(part === "F"){
+var letterz = ("CY")
+}
+if(part === "G"){
+var letterz = ("CU")
+}
+if(part === "H"){
+var letterz = ("wH")
+}
+if(part === "I"){
+var letterz = ("CI")
+}
+if(part === "J"){
+var letterz = ("Ci")
+}
+if(part === "K"){
+var letterz = ("Co")
+}
+if(part === "L"){
+var letterz = ("cO")
+}
+if(part === "M"){
+var letterz = ("0c")
+}
+if(part === "N"){
+var letterz = ("c0")
+}
+if(part === "O"){
+var letterz = ("cv")
+}
+if(part === "P"){
+var letterz = ("Vc")
+}
+if(part === "Q"){
+var letterz = ("Ec")
+}
+if(part === "R"){
+var letterz = ("QM")
+}
+if(part === "S"){
+var letterz = ("mQ")
+}
+if(part === "T"){
+var letterz = ("br")
+}
+if(part === "U"){
+var letterz = ("rb")
+}
+if(part === "V"){
+var letterz = ("Ks")
+}
+if(part === "W"){
+var letterz = ("sK")
+}
+if(part === "X"){
+var letterz = ("Kw")
+}
+if(part === "Y"){
+var letterz = ("wK")
+}
+if(part === "Z"){
+var letterz = ("bA")
+}
+//Punctuation
+if(part === "."){
+var letterz = ("qm")
+}
+if(part === "?"){
+var letterz = ("QK")
+}
+if(part === ","){
+var letterz = ("Qp")
+}
+if(part === "<"){
+var letterz = (" mq")
+}
+if(part === ">"){
+var letterz = (" Wy")
+}
+if(part === ":"){
+var letterz = ("yW")
+}
+if(part === ";"){
+var letterz = ("sU")
+}
+if(part === "'"){
+var letterz = ("wZ")
+}
+if(part === "["){
+var letterz = ("qS")
+}
+if(part === "]"){
+var letterz = ("nE")
+}
+if(part === "{"){
+var letterz = ("iO")
+}
+if(part === "}"){
+var letterz = ("Oi")
+}
+if(part === "|"){
+var letterz = ("QB")
+}
+if(part === "!"){
+var letterz = ("se")
+}
+if(part === "@"){
+var letterz = ("su")
+}
+if(part === "#"){
+var letterz = ("sM")
+}
+if(part === "$"){
+var letterz = ("SC")
+}
+if(part === "%"){
+var letterz = ("qn")
+}
+if(part === "^"){
+var letterz = ("Eq")
+}
+if(part === "*"){
+var letterz = ("Da")
+}
+if(part === "("){
+var letterz = ("cq")
+}
+if(part === ")"){
+var letterz = ("Qd")
+}
+if(part === "-"){
+var letterz = ("uE")
+}
+if(part === "_"){
+var letterz = ("pN")
+}
+if(part === "+"){
+var letterz = ("Aq")
+}
+if(part === "="){
+var letterz = ("Q0")
+}
+if(part === "~"){
+var letterz = ("IO")
+}
+if(part === "`"){
+var letterz = ("io")
+}
+if(part === "/"){
+var letterz = ("zp")
+}
+
+//Numbers
+if(part === "1"){
+var letterz = ("Zc")
+}
+if(part === "2"){
+var letterz = ("Ac")
+}
+if(part === "3"){
+var letterz = ("eD")
+}
+if(part === "4"){
+var letterz = ("s6")
+}
+if(part === "5"){
+var letterz = ("Ps")
+}
+if(part === "6"){
+var letterz = ("sp")
+}
+if(part === "7"){
+var letterz = ("ps")
+}
+if(part === "8"){
+var letterz = ("zs")
+}
+if(part === "9"){
+var letterz = ("yu")
+}
+if(part === "0"){
+var letterz = ("pO")
+}
+var sent = sent + letterz
+var runthroughs = (runthroughs + 1)
+}
+}else{
+var runthroughs = 0
+var wordlength = 1
+var characters = ch;
+var wordlength = characters.length
+while(runthroughs < wordlength){
+var part = characters.substring(runthroughs,runthroughs + 2)
+if(part === "sT"){
+var letterz = ("a")
+}
+if(part === "p2"){
+var letterz = ("b")
+}
+if(part === "9v"){
+var letterz = ("c") 
+}
+if(part === "ab"){
+var letterz = ("d")
+}
+if(part === "mN"){
+var letterz = ("e")
+}
+if(part === "Mn"){
+var letterz = ("f")
+}
+if(part === "nM"){
+var letterz = ("g")
+}
+if(part === "Nm"){
+var letterz = ("h")
+}
+if(part === "QQ"){
+var letterz = ("i")
+}
+if(part === "ba"){
+var letterz = ("j")
+}
+if(part === "bB"){
+var letterz = ("k")
+}
+if(part === "Be"){
+var letterz = ("l")
+}
+if(part === "ZZ"){
+var letterz = ("m")
+}
+if(part === "zz"){
+var letterz = ("n")
+}
+if(part === "PP"){
+var letterz = ("o")
+}
+if(part === "mL"){
+var letterz = ("p")
+}
+if(part === "FF"){
+var letterz = ("q")
+}
+if(part === "cc"){
+var letterz = ("r")
+}
+if(part === "Qu"){
+var letterz = ("s")
+}
+if(part === "SP"){
+var letterz = ("t")
+}
+if(part === "AY"){
+var letterz = ("u")
+}
+if(part === "SL"){
+var letterz = ("v")
+}
+if(part === "PL"){
+var letterz = ("w")
+}
+if(part === "LS"){
+var letterz = ("x")
+}
+if(part === "UU"){
+var letterz = ("y")
+}
+if(part === "PU"){
+var letterz = ("z")
+}
+if(part === "qQ"){
+var letterz = (" ")
+}
+if(part === "CQ"){
+var letterz = ("A")
+}
+if(part === "CW"){
+var letterz = ("B")
+}
+if(part === "CE"){
+var letterz = ("C")
+}
+if(part === "CR"){
+var letterz = ("D")
+}
+if(part === "CT"){
+var letterz = ("E")
+}
+if(part === "CY"){
+var letterz = ("F")
+}
+if(part === "CU"){
+var letterz = ("G")
+}
+if(part === "wH"){
+var letterz = ("H")
+}
+if(part === "CI"){
+var letterz = ("I")
+}
+if(part === "Ci"){
+var letterz = ("J")
+}
+if(part === "Co"){
+var letterz = ("K")
+}
+if(part === "cO"){
+var letterz = ("L")
+}
+if(part === "0c"){
+var letterz = ("M")
+}
+if(part === "c0"){
+var letterz = ("N")
+}
+if(part === "cv"){
+var letterz = ("O")
+}
+if(part === "Vc"){
+var letterz = ("P")
+}
+if(part === "Ec"){
+var letterz = ("Q")
+}
+if(part === "QM"){
+var letterz = ("R")
+}
+if(part === "mQ"){
+var letterz = ("S")
+}
+if(part === "br"){
+var letterz = ("T")
+}
+if(part === "rb"){
+var letterz = ("U")
+}
+if(part === "Ks"){
+var letterz = ("V")
+}
+if(part === "sK"){
+var letterz = ("W")
+}
+if(part === "Kw"){
+var letterz = ("X")
+}
+if(part === "wK"){
+var letterz = ("Y")
+}
+if(part === "bA"){
+var letterz = ("Z")
+}
+//Punctuation
+if(part === "zp"){
+var letterz = ("/")
+}
+if(part === "qm"){
+var letterz = (".")
+}
+if(part === "QK"){
+var letterz = ("?")
+}
+if(part === "Qp"){
+var letterz = (",")
+}
+if(part === " mq"){
+var letterz = ('<')
+}
+if(part === " Wy"){
+var letterz = ('>')
+}
+if(part === "yW"){
+var letterz = (":")
+}
+if(part === "sU"){
+var letterz = (";")
+}
+if(part === "wZ"){
+var letterz = ("'")
+}
+if(part === "qS"){
+var letterz = ("[")
+}
+if(part === "nE"){
+var letterz = ("]")
+}
+if(part === "iO"){
+var letterz = ("{")
+}
+if(part === "Oi"){
+var letterz = ("}")
+}
+if(part === "QB"){
+var letterz = ("|")
+}
+if(part === "se"){
+var letterz = ("!")
+}
+if(part === "su"){
+var letterz = ("@")
+}
+if(part === "sM"){
+var letterz = ("#")
+}
+if(part === "SC"){
+var letterz = ("?")
+}
+if(part === "qn"){
+var letterz = ("%")
+}
+if(part === "Eq"){
+var letterz = ("^")
+}
+if(part === "Da"){
+var letterz = ("*")
+}
+if(part === "cq"){
+var letterz = ("(")
+}
+if(part === "Qd"){
+var letterz = (")")
+}
+if(part === "uE"){
+var letterz = ("-")
+}
+if(part === "pN"){
+var letterz = ("_")
+}
+if(part === "Aq"){
+var letterz = ("+")
+}
+if(part === "Q0"){
+var letterz = ("=")
+}
+if(part === "IO"){
+var letterz = ("~")
+}
+if(part === "io"){
+var letterz = ("`")
+}
+//Numbers
+if(part === "Zc"){
+var letterz = ("1")
+}
+if(part === "Ac"){
+var letterz = ("2")
+}
+if(part === "eD"){
+var letterz = ("3")
+}
+if(part === "s6"){
+var letterz = ("4")
+}
+if(part === "Ps"){
+var letterz = ("5")
+}
+if(part === "sp"){
+var letterz = ("6")
+}
+if(part === "ps"){
+var letterz = ("7")
+}
+if(part === "zs"){
+var letterz = ("8")
+}
+if(part === "yu"){
+var letterz = ("9")
+}
+if(part === "pO"){
+var letterz = ("0")
+}
+//Here it is
+var runthroughs = (runthroughs + 2)
+var sent = sent + letterz;
+}
+}
+var encryptline = sent.substring(9,sent.length);
+var enclen = encryptline.length;
+var encrun = 0;
+var filled = "";
+while(enclen > encrun){
+if(encryptline.substring(encrun,encrun+2) === "/n"){
+var filled = filled + "<br>";
+var encrun = encrun+2;
+}else{
+var filled = filled + encryptline.substring(encrun,encrun+1);
+var encrun = encrun+1;
+}
+}
+var filled = filled.substring(0,filled.length-2);
+document.write(filled);
+}
+</script> 
+</body> 
